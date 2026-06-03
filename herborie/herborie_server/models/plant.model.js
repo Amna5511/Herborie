@@ -7,6 +7,11 @@ const plantSchema = new Schema (
             required : true, 
             trim : true,
         },
+        latin_name: {
+            type : String,
+            required : true, 
+            trim : true,
+        },
         image : {
             type : String ,
             required : true ,
@@ -17,10 +22,12 @@ const plantSchema = new Schema (
             required : true,
             trim : true,
         },
-        medicalpart : {
-            type : String,
-            required : true,
-        }, 
+        medicalpart : 
+         [String],
+         
+        effects : 
+        [String],
+
         medicaluse : {
             type : String,
             required : true,
@@ -28,7 +35,12 @@ const plantSchema = new Schema (
         warnings : {
             type : String,
             required : true,
-        },  
+        }, 
+        poisonous  : {
+            type : Boolean,
+            default : false 
+        }
+
        
     },
     {
