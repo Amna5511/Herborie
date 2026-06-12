@@ -1,5 +1,6 @@
 //const authService = require 
-
+const authService = require('../middlewares/auth/auth.service');
+const jwtUtils = require('../middlewares/utils/jwt.utils');
 
 const authController = {
  

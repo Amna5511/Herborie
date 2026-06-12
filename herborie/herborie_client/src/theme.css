@@ -1,0 +1,12 @@
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-body:    "Lora", serif;
+
+  --color-parchment: #F4EDD8;
+  --color-ink:       #1A1208;
+  --color-sage:      #4A6741;
+  --color-rust:      #8B4A2B;
+  --color-muted:     #8B7D6B;
+  --color-cream:     #FBF7EF;
+}

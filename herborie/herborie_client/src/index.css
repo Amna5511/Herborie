@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;1,400&display=swap');
+
+@import "tailwindcss";
+@import "./theme.css";
+
+#root {
+  @apply font-body bg-parchment;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex-shrink: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+header a {
+  @apply text-cream/60
+  underline decoration-transparent
+  hover:decoration-cream hover:decoration-2 underline-offset-6
+  transition duration-150 ease-in-out;
+}
+
+header a.active {
+  @apply text-sage;
+}
+
+.btn {
+  @apply bg-sage text-cream py-2 px-8
+  font-body text-xs uppercase tracking-widest
+  border border-sage
+  hover:bg-transparent hover:text-sage transition-colors;
+}
+
+.label-form {
+  @apply font-body text-xs uppercase tracking-wider text-muted block mb-1;
+}
+
+.input-form {
+  @apply w-full bg-parchment border border-muted/40 px-4 py-2
+  font-body text-ink focus:outline-none focus:border-sage;
+}
