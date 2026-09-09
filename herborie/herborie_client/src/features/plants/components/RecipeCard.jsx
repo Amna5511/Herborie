@@ -47,7 +47,7 @@ export const RecipeCard = ({ recipe }) => {
         <img
           src={recipe.image}
           alt={recipe.title}
-          className="w-full object-cover border-b border-muted/30"
+          className="w-full  h-64 object-contain border-b border-muted/30"
         />
       ) : (
         <div className="w-full aspect-video bg-cream border-b border-muted/30 flex items-center justify-center">
