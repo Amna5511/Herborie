@@ -9,10 +9,16 @@ export const Header = () => {
   const [, setToken] = useAtom(tokenAtom)
   const [count] = useAtom(shoppingCountAtom)
 
-  const handleLogout = () => {
-    authService.logout()
+  const handleLogout = async () => {
+  try {
+    await authService.logout()
+  } catch (err) {
+    console.error(err)
+  } finally {
+    localStorage.removeItem('token') 
     setToken(null)
   }
+}
 
   const navLink = "hover:text-cream transition-colors"
   const activeLink = "text-cream"

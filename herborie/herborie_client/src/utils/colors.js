@@ -1,6 +1,5 @@
 // Single source of truth for Herboria colors
 // Used by jsPDF (which cannot access CSS variables)
-// Matches theme.css exactly
 
 const hexToRgb = (hex) => {
   const r = parseInt(hex.slice(1, 3), 16)

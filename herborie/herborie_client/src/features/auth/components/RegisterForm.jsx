@@ -2,14 +2,16 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import authService from '../services/auth.service'
 
+
+
 export const RegisterForm = () => {
   const [form, setForm] = useState({ firstname: '', lastname: '', email: '', password: '' })
   const [error, setError] = useState(null)
   const navigate = useNavigate()
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
-
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value }) 
   const handleSubmit = async (e) => {
+    
     e.preventDefault()
     setError(null)
     try {

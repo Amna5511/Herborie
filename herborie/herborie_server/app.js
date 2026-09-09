@@ -23,7 +23,7 @@ server.use(cors());
 
  mongoose.connect(MONGO_CONNECTION,{ dbName : 'herboria'})
         .then(() => console.log(`Database it's connected`))
-       .catch(err => console.err("Database connection error :", err));
+       .catch(err => console.log("Database connection error :", err));
        
 const router = require('./routes')
 server.use('/api', router);
