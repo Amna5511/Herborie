@@ -15,7 +15,6 @@ export const Header = () => {
   } catch (err) {
     console.error(err)
   } finally {
-    localStorage.removeItem('token') 
     setToken(null)
   }
 }
