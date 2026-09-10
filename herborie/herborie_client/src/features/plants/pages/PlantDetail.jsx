@@ -84,7 +84,7 @@ export const PlantDetail = () => {
             <img
               src={plant.image}
               alt={plant.name}
-              className="w-full object-cover border border-muted/30"
+              className="w-full max-h-[500px] object-contain border border-muted/30"
             />
           ) : (
             <div className="w-full aspect-square bg-cream border border-muted/30 flex items-center justify-center">
